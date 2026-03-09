@@ -1,18 +1,17 @@
 {
-  "name": "NetworkOptimizer",
-  "id": "networkoptimizer",
-  "version": "1.0",
-  "description": "Optimiza la red en Minecraft",
-  "author": "Tu nombre",
-  "dependencies": {
-    "minecraft": "1.21.1"
-  },
+  "schemaVersion": 1,
+  "id": "network-optimizer",
+  "version": "1.0.0",
+  "name": "Network Optimizer",
   "entrypoints": {
-    "mixin": {
-      "target": {
-        "type": "intermediary",
-        "version": "1.21.1"
-      }
-    }
-  }
+    "main": [
+      "com.example.NetworkOptimizer"
+    ],
+    "client": [
+      "com.example.NetworkOptimizerClient"
+    ]
+  },
+  "mixins": [
+    "network-optimizer.mixins.json"
+  ]
 }
