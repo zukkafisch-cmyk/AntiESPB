@@ -1,0 +1,6 @@
+[
+  {
+    "target": "net.minecraft.client.network.ClientPlayNetworkHandler",
+    "mixin": "com.network.optimizer.mixin.MixinNetworkHandler"
+  }
+]
